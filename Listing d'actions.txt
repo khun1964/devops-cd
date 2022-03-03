@@ -6,6 +6,8 @@ en  Console : git init    # créer une master
 
 git commit -m "chore: first commit"
 
+git commit -m "first commit"
+
 git checkout -b main # créer une branche main 
 
 github .new  # à utiliser sans github desktop
