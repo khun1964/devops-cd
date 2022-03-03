@@ -15,3 +15,8 @@ github .new  # à utiliser sans github desktop
 git remote add origin https://github.com/khun1964/devops-cd.git
 
 git push -u origin main
+
+ git add commit -m "feat:ajout de la route pour l'affichage du message 'hello world' "
+
+ git commit -am "fix: ajout du ! au message de retour"
+
