@@ -20,3 +20,5 @@ git push -u origin main
 
  git commit -am "fix: ajout du ! au message de retour"
 
+ git commit -am "doc : documententation du fichier principal"
+
