@@ -8,25 +8,33 @@ git commit -m "chore: first commit"
 
 git checkout -b main # créer une branche main 
 
+
 github .new  # à utiliser sans github desktop
 
-git remote add origin
+
+git remote add origin 
 
 git push -u origin main
 
-git add commit -m "feat:ajout de la route pour l'affichage du message 'hello world' "
+
+les corrections
+
+git add commit -am "feat:ajout de la route pour l'affichage du message 'hello world' "
 
 git commit -am "fix(ci): correction du yml"
 
 
-git checkout main
+git checkout main   // gitpassage à la branche main
 
 git merge develop
 
-git checkout develop
+
+git checkout develop   / passage à la branche develop
 
 git checkout -b demo
-
+ 
+git alarme en couleur : :wwq puis valider yml
+avec nano ctrtl w 
 
 
 début push[main] standard version 
