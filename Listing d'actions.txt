@@ -23,16 +23,22 @@ git add commit -am "feat:ajout de la route pour l'affichage du message 'hello wo
 
 git commit -am "fix(ci): correction du yml"
 
+    on utilise -m quand le fichier existe et am quand on le crée.
 
-git checkout main   // gitpassage à la branche main
 
-git merge develop
+
+
+git checkout main   // passage à la branche main
+
+git merge develop   // quand le push est fait et qu'il y a conformité.
 
 
 git checkout develop   / passage à la branche develop
 
 git checkout -b demo
  
+
+
 git alarme en couleur : :wwq puis valider yml
 avec nano ctrtl w 
 
@@ -53,3 +59,13 @@ début push[main] standard version
                                                                                                     le déploiement : configurer & authentification du server prod/pre-prod
                                                                                                     puis cela va dépendre de l'usage:
                                                                                                     -lancer la commande Azure / AWS.
+
+
+
+les versions : VX.X.X   V:version
+                B.M.m   breaking change / Major / minor
+
+                
+les drapeux ou tags s'incrémentent de façon automatique.
+
+version docker en python : python:00.0.0 etc
