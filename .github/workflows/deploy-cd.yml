@@ -1,0 +1,29 @@
+name: deploy-cd  
+
+on: 
+   push:
+     branches: [main]
+jobs:
+  conventional-commit:
+    name: "conventionnal commit"
+    runs-on: ubuntu-latest
+    steps:
+    - name: "Affichaged'un message d'exemple "
+      run: echo "Salutation"
+    - name: "pull du git"
+      uses: actions/checkout@v2
+    - name: "installation de NodeJS version 14" 
+      uses: action/setup-node@v2
+      with:
+        node-version: '14'
+    - name: "Configuration de l'utilisateur git"
+      run: 
+       git config --local user.email "actionbot[bot]@users.noreply.github.com"
+       git config --localh user.name "github-actions[bot]"
+    - name: "création du CHANGELOG et du calcue de version"  
+      run: npx standard-version 
+    - name: "git push"   
+      uses: ad-m/github-push-action@master
+      with:
+         github_token: ${{ secrets.GITHUB_TOKEN}}
+         branch: main        

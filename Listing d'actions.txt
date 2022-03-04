@@ -6,8 +6,6 @@ en  Console : git init    # créer une master
 
 git commit -m "chore: first commit"
 
-git commit -m "first commit"
-
 git checkout -b main # créer une branche main 
 
 github .new  # à utiliser sans github desktop
@@ -16,9 +14,34 @@ git remote add origin https://github.com/khun1964/devops-cd.git
 
 git push -u origin main
 
- git add commit -m "feat:ajout de la route pour l'affichage du message 'hello world' "
+git add commit -m "feat:ajout de la route pour l'affichage du message 'hello world' "
 
- git commit -am "fix: ajout du ! au message de retour"
+git commit -am "fix(ci): correction du yml"
 
- git commit -am "doc : documententation du fichier principal"
 
+git checkout main
+
+git merge develop
+
+git checkout develop
+
+git checkout -b demo
+
+
+
+début push[main] standard version 
+                   -nodejs
+                   -pull le git
+                   -config le git use
+                   -npx standard-version
+                   -push
+
+                                           puis le delivery 
+                                           -faire un pull du git
+                                           -générer l'image : build image
+                                           -configuration de l'authentification du registery
+                                           -puis push image
+
+                                                                                                    le déploiement : configurer & authentification du server prod/pre-prod
+                                                                                                    puis cela va dépendre de l'usage:
+                                                                                                    -lancer la commande Azure / AWS.
