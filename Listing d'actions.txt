@@ -10,7 +10,7 @@ git checkout -b main # créer une branche main
 
 github .new  # à utiliser sans github desktop
 
-git remote add origin https://github.com/khun1964/devops-cd.git
+git remote add origin
 
 git push -u origin main
 
